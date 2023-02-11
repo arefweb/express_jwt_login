@@ -1,0 +1,26 @@
+{
+  "name": "login_project",
+  "version": "1.0.0",
+  "description": "Backend with Node-js/Express, Frontend with React, Database MySQL. in order to build a login/logout capability.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.ts",
+    "build": "tsc --project .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aref Movahedzadeh",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@shopify/eslint-plugin": "^42.0.3",
+    "@types/express": "^4.17.17",
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "@typescript-eslint/parser": "^5.51.0",
+    "eslint": "^8.34.0",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
+  }
+}
