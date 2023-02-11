@@ -1,4 +1,4 @@
-### How to add Typescript to Node.js project
+## How to add Typescript to Node.js project
 Make sure **`tsc`** is installed globally on your machine. then on the project directory add `tsc --init`  .
 
 Now you have a **`tsconfig.json`** file in your project directory. in the *tsconfig* file change the following properties:
@@ -23,7 +23,7 @@ create `src` directory and in the `package.json` add:
       "build": "tsc --project .",
       }
 
-### How to add Eslint to Node.js project
+## How to add Eslint to Node.js project
 
 1. install following packages:
  ```bash
