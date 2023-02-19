@@ -3,6 +3,7 @@ import express, { Express, Request, Response } from "express";
 
 const app: Express = express();
 const PORT = process.env.PORT || 4000;
+require("dotenv").config();
 
 // body parser "json"
 app.use(express.json());

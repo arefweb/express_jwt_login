@@ -12,4 +12,6 @@ module.exports = function (app: Express) {
     ],
     controller.signup
   );
+
+  app.post("/api/auth/signin", controller.signIn);
 };

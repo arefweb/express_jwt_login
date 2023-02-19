@@ -1,7 +1,14 @@
-import { Sequelize, DataTypes, Model, ModelStatic } from "sequelize";
+import {DataTypes, Model, ModelStatic, Sequelize} from "sequelize";
 
-module.exports = (sqlConnection: Sequelize): ModelStatic<Model> => {
-  const User = sqlConnection.define("users", {
+export interface IUser {
+  username: string;
+  email: string;
+  password: string;
+  [key: string]: number | string;
+}
+
+module.exports = (sqlConnection: Sequelize): ModelStatic<Model<IUser>> => {
+  return sqlConnection.define("users", {
     username: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -18,5 +25,4 @@ module.exports = (sqlConnection: Sequelize): ModelStatic<Model> => {
       defaultValue: false,
     },
   });
-  return User;
 };

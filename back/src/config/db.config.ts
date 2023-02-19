@@ -4,4 +4,4 @@ module.exports = {
   PASSWORD: "",
   DB: "express_jwt_login",
   dialect: "mysql",
-}
+};
