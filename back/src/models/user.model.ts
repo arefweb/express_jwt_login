@@ -1,4 +1,4 @@
-import {DataTypes, Model, ModelStatic, Sequelize} from "sequelize";
+import { DataTypes, Model, ModelStatic, Sequelize } from "sequelize";
 
 export interface IUser {
   username: string;
