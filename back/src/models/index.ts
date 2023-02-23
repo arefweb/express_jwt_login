@@ -7,11 +7,13 @@ const sqlConnection = new Sequelize(config.DB, config.USER, config.PASSWORD, {
 });
 
 const user = require("./user.model")(sqlConnection);
+const customer = require("./customer.model")(sqlConnection);
 
 const db = {
   Sequelize: Sequelize,
   sqlConnection: sqlConnection,
   user: user,
+  customer: customer,
 };
 
 module.exports = db;

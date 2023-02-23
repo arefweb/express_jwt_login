@@ -14,6 +14,7 @@ app.get("/", (req: Request, res: Response) => {
 
 // routes
 require("./routes/auth.routes")(app);
+require("./routes/customer.routes")(app);
 
 // (async () => {
 //   try {
@@ -21,9 +22,19 @@ require("./routes/auth.routes")(app);
 //       db.user.create({
 //         username: "admin",
 //         email: "test@gmail.com",
-//         password: "1234"
-//       })
-//     })
+//         password: "1234",
+//       });
+//       db.customer.create({
+//         fullName: "Richard Dawkins",
+//         phone: "0044-4882589",
+//         city: "London",
+//       });
+//       db.customer.create({
+//         fullName: "Stephen Hawking",
+//         phone: "0044-3332589",
+//         city: "Boston",
+//       });
+//     });
 //     console.log("DB Connection has been established successfully.");
 //   } catch (error) {
 //     console.error("Unable to connect to the database:", error);
