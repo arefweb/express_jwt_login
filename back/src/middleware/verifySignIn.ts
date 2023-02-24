@@ -11,7 +11,8 @@ const checkToken = (req: Request, res: Response, next: NextFunction) => {
   }
 
   try {
-    jwt.verify(token, secretKey);
+    const rawToken = token.split("Bearer ")[1];
+    jwt.verify(rawToken, secretKey);
   } catch (error: any) {
     return res
       .status(401)
