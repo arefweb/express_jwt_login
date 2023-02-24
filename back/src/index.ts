@@ -1,4 +1,5 @@
 import express, { Express, Request, Response } from "express";
+const cors = require("cors");
 // const db = require("./models");
 
 const app: Express = express();
@@ -7,6 +8,7 @@ require("dotenv").config();
 
 // body parser "json"
 app.use(express.json());
+app.use(cors());
 
 app.get("/", (req: Request, res: Response) => {
   res.send("Typescript and Node.js works!");

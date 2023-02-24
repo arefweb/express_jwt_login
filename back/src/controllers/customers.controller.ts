@@ -43,3 +43,7 @@ module.exports.createCustomer = (req: Request, res: Response) => {
     return res.status(500).send(error);
   }
 };
+
+module.exports.test = (req: Request, res: Response) => {
+  res.json({ message: "Hi, You have called backend service. May I help you?" });
+};

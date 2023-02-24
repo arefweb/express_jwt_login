@@ -15,4 +15,5 @@ module.exports = function (app: Express) {
     [verifySignIn.checkToken],
     controller.createCustomer
   );
+  app.get("/api/test", controller.test);
 };
